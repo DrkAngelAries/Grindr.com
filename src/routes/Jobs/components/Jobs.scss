@@ -1,0 +1,35 @@
+@import 'base';
+.jobs {
+	.content {
+		margin-top: 50px;
+	}
+	h3 {
+		margin: 40px 0 38px;
+	}
+	.job_item {
+		a {
+			display: inline-block;
+			color: $black;
+		}
+		h4 {
+			margin: 0 0 3px;
+		}
+		p {
+			color: black;
+			margin: 0;
+			font-size: 0.7em;
+		}
+		.yellow {
+			color: $pee;
+			margin: 0 0 41px;
+		}
+	}
+	a.view_all {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 0 1px;
+		font-family: DIN-Medium;
+		border-bottom: 2px solid #fec010;
+		color: #fec010;
+	}
+}

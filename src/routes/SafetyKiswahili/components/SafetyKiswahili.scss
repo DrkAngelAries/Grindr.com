@@ -1,0 +1,9 @@
+@import 'base';
+.safety_kiswahili.container {
+	h1 {
+		text-align: center;
+	}
+	p:first-of-type {
+		@extend h1;
+	}
+}

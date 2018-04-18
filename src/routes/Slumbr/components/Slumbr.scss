@@ -1,0 +1,213 @@
+@import 'base';
+.slumbr.container {
+	display: table;
+	position: relative;
+	max-width: 905px;
+	width: calc(100% - 35px);
+	padding: 60px 30px;
+	background: #f9f0e2;
+	color: rgba(109, 110, 113, 0.8);
+	font-size: .95em;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	font-family: SpecialElite;
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 17px;
+		top: 0;
+		left: 0;
+		background: url(../assets/x-border.jpg) repeat-x;
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 17px;
+		bottom: 0;
+		left: 0;
+		background: url(../assets/x-border.jpg) repeat-x;
+	}
+	.slumbr_inner {
+		display: table-cell;
+		vertical-align: middle;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 17px;
+			height: 100%;
+			top: 0;
+			left: -17px;
+			background: url(../assets/y-border.jpg) repeat-y;
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 17px;
+			height: 100%;
+			top: 0;
+			right: -17px;
+			background: url(../assets/y-border.jpg) repeat-y;
+		}
+		.logo,
+		.stamp {
+			display: block;
+			width: 80%;
+			max-width: 338px;
+			margin: 30px auto;
+		}
+		.stamp {
+			width: 74%;
+			max-width: 270px;
+		}
+		.event_info {
+			font-family: GarageGothic-Bold;
+			text-align: center;
+			color: #6d6e71;
+			font-size: 6.2vw;
+			@media screen and (min-width: 500px) {
+				font-size: 2em;
+			}
+		}
+		#hidden_iframe {
+			display: none;
+		}
+		#slumbrForm {
+			margin-top: 28px;
+			.form_section {
+				position: relative;
+			}
+			.checkbox_section {
+				margin-bottom: 20px;
+				label {
+					cursor: pointer;
+					font-size: .65em;
+					margin-right: -20px;
+					@media screen and (min-width: 375px) {
+						font-size: .85em;
+					}
+					@media screen and (min-width: 500px) {
+						margin-right: -25px;
+					}
+					&:first-child {
+						font-size: 1em;
+					}
+				}
+				input {
+					width: 10px;
+					height: 10px;
+					cursor: pointer;
+					vertical-align: top;
+					margin-right: 5px;
+					appearance: none;
+					border: 1px solid rgba(109, 110, 113, 0.8);
+					@media screen and (min-width: 500px) {
+						width: 20px;
+						height: 20px;
+						margin-right: 10px;
+					}
+					@include mq(medium) {
+						margin-left: 30px;
+					}
+					&:checked {
+						background: #00b3e3;
+					}
+				}
+			}
+			label,
+			input {
+				display: inline-block;
+				margin-bottom: 20px;
+				vertical-align: sub;
+			}
+			input {
+				background: transparent;
+				border: 0;
+				border-bottom: 1px solid rgba(109, 110, 113, 0.8);
+				outline: none;
+				font-family: SpecialElite;
+				&#fname,
+				&#lname,
+				&#email,
+				&#affiliation {
+					@include mq(small) {
+						float: right;
+					}
+				}
+				&#fname {
+					width: 100%;
+					@include mq(small) {
+						width: calc(100% - 158px);
+					}
+				}
+				&#lname {
+					width: 100%;
+					@include mq(small) {
+						width: calc(100% - 146px);
+					}
+				}
+				&#email {
+					width: 100%;
+					@include mq(small) {
+						width: calc(100% - 86px);
+					}
+				}
+				&#affiliation {
+					width: 100%;
+					@include mq(small) {
+						width: calc(100% - 139px);
+					}
+				}
+				&#gname1,
+				&#gname2 {
+					width: 100%;
+				}
+				&#submit {
+					display: block;
+					margin: 0 auto;
+					background: url(../assets/submit.png) no-repeat center / cover;
+					width: 175px;
+					height: 61px;
+					border: none;
+					margin-bottom: 0;
+					@include mq(small) {
+						position: absolute;
+						right: 132%;
+						bottom: 3%;
+					}
+				}
+			}
+			.asterisk {
+				font-family: arial, helvetica, sans-serif;
+			}
+			label.error {
+				color: #ff5859;
+			}
+			label.error {
+				position: absolute;
+				left: 0;
+				top: 18px;
+				font-size: 0.8em;
+			}
+		}
+	}
+	.special-note{
+		font-size: 8px;
+	}
+}
+
+.submitted_section,
+body.submitted .form_container {
+	display: none;
+}
+
+body.submitted .submitted_section {
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 67%;
+}

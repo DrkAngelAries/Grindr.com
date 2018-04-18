@@ -1,0 +1,14 @@
+@import 'base';
+.safety_farsi.container {
+	direction: rtl;
+	text-align: right;
+	h1 {
+		text-align: center;
+	}
+	p:first-of-type {
+		@extend h1;
+	}
+	.align_center {
+		text-align: center;
+	}
+}

@@ -1,0 +1,36 @@
+@import 'base';
+.share-bar {
+	margin-bottom: 11px;
+	text-align: right;
+	.soc-label {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: DIN-Bold;
+		font-size: .7em;
+		img.share-arrow {
+			margin-left: 10px;
+			vertical-align: middle;
+			width: 15px;
+			height: auto;
+			padding-bottom: 5px;
+			display: none;
+		}
+	}
+	.share-buttons {
+		display: inline-block;
+		vertical-align: middle;
+		& > a > img {
+			height: 20px;
+			width: auto;
+			margin-left: 26px;
+		}
+		.tw_social img {
+			height: 18px;
+		}
+	}
+}
+#bottom-box {
+	.share-bar {
+		text-align: left;
+	}	
+}

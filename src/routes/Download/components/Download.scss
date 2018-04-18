@@ -1,0 +1,168 @@
+@import 'base';
+.download {
+	&.container {
+		width: 100%;
+		@include mq(large) {
+			max-width: 1140px;
+			.text_wrapper {
+				margin: 25px 0 26px 0;
+			}
+		}
+		@include mq(xl-large) {
+			margin-bottom: 149px;
+		}
+	}
+	font-family: Din-Regular;
+	@include mq(small) {
+		margin: 70px auto 0;
+	}
+	.temp-video {
+		position: relative;
+		padding-bottom: 56.25%;
+		margin-bottom: 50px;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.headings {
+		max-width: 251px;
+		margin: 0 auto;
+		text-align: center;
+		@include mq(small) {
+			max-width: none;
+		}
+		@include mq(xl-large) {
+			margin-bottom: 99px;
+		}
+		h1 {
+			font-size: 2.5em;
+			margin: 0 0 2px;
+			border: none;
+			padding: 0;
+			text-align: center;
+		}
+		h4 {
+			line-height: 1.15;
+			width: 211px;
+			margin: 0 auto 4px;
+			@include mq(small) {
+				width: auto;
+			}
+		}
+	}
+	.content {
+		margin-top: 50px;
+	}
+	.icons_wrapper {
+		max-width: 191px;
+		margin: 0 auto;
+		@include mq(small) {
+			max-width: 490px;
+			margin: 110px auto 0;
+			padding: 0;
+		}
+		@include mq(large) {
+			margin: 68px auto 0;
+		}
+		.bullets {
+			.points {
+				position: relative;
+				font-family: Din-Bold;
+				font-size: 0.9em;
+				padding: 0 0 0 30px;
+				margin: 0 0 50px;
+				@include mq(small) {
+					width: 208px;
+				}
+				.icons {
+					position: absolute;
+					left: 0;
+					top: 5px;
+					width: 16px;
+					height: auto;
+				}
+				span {
+					display: block;
+					color: #737373;
+					font-family: Din-Regular;
+				}
+				&.point4,
+				&.point5,
+				&.point6 {
+					@include mq(small) {
+						float: right;
+					}
+					@include mq(large) {
+						float: none;
+					}
+				}
+				&.point1 {
+					@include mq(small) {
+						margin: 0 0 90px;
+					}
+				}
+			}
+			@include mq(medium) {
+				width: 50%;
+			}
+		}
+		&.left .bullets {
+			@include mq(large) {
+				margin: 0 23px 0 0;
+			}
+		}
+	}
+	.phone_wrapper {
+		text-align: center;
+		margin: 20px auto 32px;
+		max-width: 470px;
+		@include mq(small) {
+			margin: 70px auto 32px;
+		}
+		@include mq(large) {
+			margin: 0 auto;
+		}
+		.phone {
+			display: inline-block;
+			vertical-align: middle;
+			width: 44%;
+			@include mq(small) {
+				margin: 0 0 0 27px;
+			}
+			@include mq(large) {
+				width: auto;
+				margin: 0;
+			}
+		}
+		.links_wrapper {
+			display: inline-block;
+			vertical-align: middle;
+			width: 40%;
+			margin: 3% 6% 0 0;
+			@include mq(large) {
+				margin: 3% 0 0 0;
+			}
+			&:last-of-type {
+				width: auto;
+				.ad_buttons {
+					display: inline-block;
+					margin: 10% 0 0;
+					&.app_store {
+						margin: 10% 0 0;
+					}
+				}
+			}
+			.ad_buttons {
+				display: block;
+				margin: 0 0 8%;
+				&.app_store {
+					margin: 0 0 23%;
+				}
+			}
+		}
+	}
+}

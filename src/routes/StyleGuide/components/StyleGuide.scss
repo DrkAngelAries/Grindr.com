@@ -1,0 +1,82 @@
+@import 'base';
+
+
+.download {
+//	h1 {
+//		text-align: center;
+//		border: none;
+//		margin-bottom: 0;
+//	}
+//	h2 {
+//		font-family: DIN-Bold;
+//		font-size: 1.2em;
+//		margin: 0;
+//	}
+//
+//	h3 {
+//		font-family: DIN-Medium;
+//		font-size: 1em;
+//		color: $grey-2;
+//		margin-bottom: 30px;
+//	}
+
+	.download_links {
+		a {
+			display: block;
+		}
+	}
+	.app_store_link,
+	.google_play_link, {
+		display: block;
+	}
+	.app_store_link {
+		margin: 0 0 40px;
+	}
+
+	.iphone_cascade_img {
+		max-width: 310px;
+		width: 100%;
+	}
+
+	.app_features {
+		ul {
+			display: inline-block;
+			min-width: 290px;
+			list-style: none;
+			font-size: 1.3em;
+			li {
+				position: relative;
+				padding: 0 0 0 40px;
+				p {
+					color: $grey-2;
+				}
+			}
+			li:before {
+				content: "";
+				position: absolute;
+				background-image: url('../assets/grindr_icons.svg');
+				background-repeat: no-repeat;
+				background-size: 600% 100%;
+				width: 32px;
+				height: 32px;
+				left: 0;
+				top: 0;
+			}
+			.app_feature2:before {
+				background-position: -32px 0;;
+			}
+			.app_feature3:before {
+				background-position: -69px 0;;
+			}
+			.app_feature4:before {
+				background-position: -102px 0;;
+			}
+			.app_feature5:before {
+				background-position: -130px 0;;
+			}
+			.app_feature6:before {
+				background-position: -160px 0;;
+			}
+		}
+	}
+}

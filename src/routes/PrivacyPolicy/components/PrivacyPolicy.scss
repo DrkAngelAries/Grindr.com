@@ -1,0 +1,83 @@
+@import 'base';
+.legal {
+	h1 {
+		text-align: center;
+		width: 80%;
+		margin: auto;
+	}
+	h2 {
+		font-size: 30px;
+		font-family: DIN-Medium;
+	}
+	p,
+	li {
+		font-family: DIN-Regular;
+	}
+	b {
+		font-family: DIN-Medium;
+	}
+	h2 {
+		color: $pee;
+	}
+
+	ol {
+		list-style-type: none;
+		counter-reset: item;
+	}
+
+	ol>li {
+		counter-increment: item;
+		display: table;
+	}
+
+	ol>li:before {
+		content: counters(item, ".") ". ";
+		display: table-cell;
+		padding-right: 0.5em;
+	}
+
+	li ol>li:before {
+		content: counters(item, ".") " ";
+		padding-right: 0.5em;
+	}
+
+	li ol[type="a"] {
+		counter-reset: list;
+	}
+
+	li ol[type="a"] li:before {
+		counter-increment: list;
+		content: "("counter(list, lower-alpha) ") ";
+		padding-right: 0.5em;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		width: 100%;
+		background: #fff;
+		border: 1px solid $grey-1;
+		border-radius: 3px;
+	}
+
+	address,
+	dl,
+	pre,
+	table td,
+	table th {
+		border: 1px solid $grey-1;
+	}
+
+	table td,
+	table th {
+		padding: 12px;
+	}
+
+	@media (min-width: 320px) and (max-width:520px) {
+		table td {
+			padding: 5px;
+			font-size: 0.6em;
+		}
+	}
+
+}

@@ -1,0 +1,45 @@
+@font-face {
+	font-family: DIN;
+	font-weight: 400;
+	src: url(https://www.grindr.com/fonts/DIN-Regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: DIN;
+	font-weight: 700;
+	src: url(https://www.grindr.com/fonts/DIN-Bold.otf) format("opentype");
+}
+
+body,
+h1,
+h2,
+h3,
+span,
+li,
+p {
+	font-family: DIN, arial, helvetica, sans-serif !important;
+}
+
+h1,
+h1 span,
+h2,
+h2 span {
+	font-weight: 700 !important;
+}
+
+body {
+	font-size: 16px;
+	color: #000;
+	font-weight: normal;
+	margin: 20px;
+}
+
+#langCont,
+#container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#container {
+	margin: 30px auto 0;
+}

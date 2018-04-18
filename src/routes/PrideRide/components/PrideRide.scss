@@ -1,0 +1,159 @@
+@import 'base';
+.pride-ride.container {
+	max-width: none;
+	width: 100%;
+	background: #ffd2f0;
+	background: linear-gradient(to bottom, #ffd2f0 0%, #ffffff 46%);
+	a {
+		font-size: 4.36vw;
+		font-family: GarageGothic-Black;
+		color: #ff5297;
+		transition: all 300ms;
+		&:hover {
+			color: #fea3d8;
+		}
+		@include mq(small) {
+			font-size: 2.1em;
+		}
+		@include mq(medium) {
+			font-size: 1.3em;
+		}
+	}
+	.pr-header {
+		text-transform: uppercase;
+		letter-spacing: .02em;
+		text-align: center;
+		margin-bottom: 35px;
+		@include mq(medium) {
+			max-width: 900px;
+			margin: 45px auto;
+		}
+		>div {
+			@include mq(medium) {
+				padding: 0;
+			}
+		}
+		.pr-logo {
+			display: block;
+			width: 73%;
+			max-width: 350px;
+			margin: 55px auto 30px;
+			@include mq(medium) {
+				width: 400px;
+				max-width: none;
+				margin: 0 0 0 10px;
+			}
+		}
+		.pr-location {
+			font-size: .8em;
+			font-family: DIN-Medium;
+			color: #45abff;
+			clear: both;
+			@include mq(medium) {
+				font-size: 1.4em;
+				text-align: right;
+			}
+		}
+		.pr-date {
+			font-size: 2.7em;
+			font-family: GarageGothic-Bold;
+			color: #ff5297;
+			line-height: 1;
+			margin-bottom: 24px;
+			@include mq(medium) {
+				font-size: 4.76em;
+				margin: 0;
+				text-align: right;
+			}
+		}
+		.pr-nav {
+			width: 70%;
+			max-width: 495px;
+			margin: 0 auto;
+			padding: 0;
+			@include mq(medium) {
+				width: 204px;
+				margin: 238px 0 0 38px;
+			}
+			li {
+				display: inline-block;
+				list-style: none;
+				text-align: left;
+				margin: 0 4%;
+				@include mq(medium) {
+					display: list-item;
+					margin: 0;
+				}
+			}
+		}
+		.pr-gaymoji1 {
+			max-width: 200px;
+			float: right;
+			margin: 66px 0 30px 0;
+		}
+	}
+	.pr-video-wrapper {
+		max-width: 940px;
+		margin: 0 auto;
+		.pr-video {
+			position: relative;
+			padding-bottom: 56.25%;
+			iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.page-content {
+		h1,
+		h2,
+		p {
+			color: #45abff;
+		}
+		h1 {
+			border-bottom-color: #45abff;
+		}
+		p {
+			span {
+				font-family: DIN-Medium;
+			}
+		}
+		.pr-button {
+			position: relative;
+			display: table;
+			text-transform: uppercase;
+			border: 5px solid #ff5297;
+			padding: 2% 8.3%;
+			margin: 50px auto;
+			background: #fcebf5;
+			line-height: 1;
+			&:hover {
+				color: #fdecf3;
+				background: #ff5297;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				border: 3px solid #fff;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			}
+			@include mq(medium) {
+				font-size: 2.1em;
+			}
+		}
+		.pr-map {
+			display: block;
+			width: 80%;
+			max-width: 350px;
+			margin: 0 auto;
+			@include mq(small) {
+				float: right;
+				width: 100%;
+			}
+		}
+	}
+}

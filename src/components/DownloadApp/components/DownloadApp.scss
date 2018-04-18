@@ -1,0 +1,261 @@
+@import 'base';
+#download-button {
+	position: fixed;
+	z-index: 99999999;
+	bottom: 20px;
+	right: 20px;
+}
+.get_app_link {
+	border-radius: 0;
+	line-height: 1.1;
+	font-family: GarageGothic-Black;
+	color: #000000;
+	
+	text-align: center;
+	text-transform: uppercase;
+	width: 42px;
+	height: auto;
+	cursor: pointer;
+
+	img {
+		display: block;
+		-webkit-filter: drop-shadow( 0 3px 4px rgba(149, 149, 149, 0.45));
+		filter: drop-shadow( 0 3px 4px rgba(149, 149, 149, 0.45));
+		transition: visibility 1s, opacity 1s;
+		-webkit-transition-timing-function: ease;
+		transition-timing-function: ease;
+	}
+	.download_msg {
+		display: none;
+		position: absolute;
+		z-index: 99999999;
+		top: 30%;
+		left: 30%;
+	}
+}
+
+.show-button {
+	display: block;
+}
+
+.hide-button {
+	display: block;
+}
+
+.growMe {
+	font-family: DIN-Medium;
+	border-radius: 50%;
+	width: 200%;
+	height: 200%;
+	position: fixed;
+	display: block;
+	right: -50%;
+	bottom: -50%;
+	background: $grey-black-1;
+	z-index: 100000;
+	-webkit-transition: width .3s, height .3s, background .5s, border-radius .3;
+	/* For Safari 3.1 to 6.0 */
+	transition: width .3s, height .3s, background .5s;
+	-webkit-transition-timing-function: ease;
+	/* Safari and Chrome */
+	transition-timing-function: ease;
+	.download_msg_blue {
+		display: block;
+		position: absolute;
+		top: 30%;
+		left: 30%;
+		width: 22%;
+		@include mq(xs-small, medium) {
+			width: 40%;
+		}
+	}
+	.download_msg_gold {
+		display: block;
+		position: absolute;
+		
+		left: 30%;
+		top: 39.8%;
+		width: 20%;
+		@include mq(xs-small, medium) {
+			top: 38%;
+			width: 35%;
+		}
+	}
+	.download_msg_gold.second {
+		top: 49%!important;
+
+		width: 12.5%;
+		@include mq(xs-small, medium) {
+			top: 45.5%!important;
+			width: 26.6%!important;
+		}
+   
+	}
+	.download_msg_gold.third {
+		top: 56% !important;
+		
+		width: 8%;
+		@include mq(xs-small, medium) {
+			width: 26.3%;
+			top: 52%!important;
+		}
+	}
+	.gaymoji_set {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+		width: 27px;
+	}
+	.bottom-bar {
+		position: absolute;
+		background: $grey-black-2;
+		left: 0;
+		bottom: 25%;
+		width: 100%;
+		height: 118px;
+		text-align: center;
+		img {
+			width: 30px;
+			/* margin-top: 2.1%; */
+			display: inline-block;
+			margin: 0 11%;
+			@include mq(xs-small) {
+				margin: 0 7%;
+			}
+
+			@include mq(small) {
+				margin: 0 8%;
+			}
+
+			@include mq(medium) {
+				margin: 0 10%;
+			}
+		}
+		.saysumfin {
+			width: 50%;
+			position: absolute;
+			left: 25%;
+			top: 17%;
+			transform: translateY(-17%);
+			text-align: left;
+			padding-left: 38px;
+			color: $grey-1;
+		}
+		.box {
+			width: 50%;
+			position: absolute;
+			left: 25%;
+			top: 67%;
+			transform: translateY(-67%);
+		}
+	}
+}
+
+.hidden {
+	opacity: 0;
+	margin-top: 20px;
+}
+
+.showMe {
+	opacity: 1;
+	margin-top: 0;
+	-webkit-transition: opacity .3s, margin-top .3s;
+	/* For Safari 3.1 to 6.0 */
+	transition: opacity .3s, margin-top .3s;
+	-webkit-transition-timing-function: ease;
+	/* Safari and Chrome */
+	transition-timing-function: ease;
+}
+
+
+/*base code*/
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	/*  animation: tada 1s 5s infinite;
+*/
+}
+
+.animated.infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+
+/*the animation definition*/
+
+@-webkit-keyframes tada {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	10%,
+	20% {
+		-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+	}
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	}
+	40%,
+	60%,
+	80% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+@keyframes tada {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		-ms-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	10%,
+	20% {
+		-webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+		-ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+	}
+	30%,
+	50%,
+	70%,
+	90% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		-ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	}
+	40%,
+	60%,
+	80% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		-ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+		transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		-ms-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+
+.tada {
+	-webkit-animation-name: tada;
+	animation-name: tada
+}

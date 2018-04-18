@@ -1,0 +1,21 @@
+@import 'base';
+
+
+
+.advertise-form {
+	text-align: center;
+	h1{
+		text-align: center;
+	}
+	iframe{
+		color:black;
+		border: 1px solid #c3c3c3 !important;
+    height: 500px;
+		form.form label {
+			color: black !important;
+		}
+	}
+	@include mq($from: xs-small, $until: small) {
+	}
+
+}

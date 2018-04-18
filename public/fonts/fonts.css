@@ -1,0 +1,28 @@
+@font-face {
+	font-family: GarageGothic-Regular;
+	src: url(/fonts/GarageGothic-Regular.otf) format("opentype");
+}
+@font-face {
+	font-family: GarageGothic-Bold;
+	src: url(/fonts/GarageGothic-Bold.otf) format("opentype");
+}
+@font-face {
+	font-family: GarageGothic-Black;
+	src: url(/fonts/GarageGothic-Black.otf) format("opentype");
+}
+@font-face {
+	font-family: DIN-Regular;
+	src: url(/fonts/DIN-Regular.otf) format("opentype");
+}
+@font-face {
+	font-family: DIN-Medium;
+	src: url(/fonts/DIN-Medium.otf) format("opentype");
+}
+@font-face {
+	font-family: DIN-Bold;
+	src: url(/fonts/DIN-Bold.otf) format("opentype");
+}
+@font-face {
+	font-family: DIN-Black;
+	src: url(/fonts/DIN-Black.otf) format("opentype");
+}

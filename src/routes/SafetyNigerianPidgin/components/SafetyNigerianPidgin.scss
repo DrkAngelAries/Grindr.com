@@ -1,0 +1,9 @@
+@import 'base';
+.safety_nigerian_pidgin.container {
+	h1 {
+		text-align: center;
+	}
+	p:first-of-type {
+		@extend h1;
+	}
+}

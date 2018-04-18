@@ -1,0 +1,113 @@
+@import 'base';
+.advertise {
+	&.container {
+		width: 100%;
+		max-width: 650px;
+		@include mq(large) {
+			max-width: 1140px;
+			.text_wrapper {
+				margin: 25px 0 26px 0;
+			}
+		}
+		@include mq(xl-large) {
+			margin-bottom: 169px;
+		}
+	}
+	font-family: Din-Regular;
+	@include mq(small) {
+		margin: 70px auto 0;
+	}
+	h1 {
+		border: none;
+		padding: 0;
+		text-align: center;
+		@include mq(xl-large) {
+			margin: 0 0 189px;
+		}
+	}
+	.content {
+		margin-top: 50px;
+	}
+	.icons_wrapper {
+		max-width: 200px;
+		margin: 0 auto;
+		overflow: hidden;
+		@include mq(small) {
+			max-width: 372px;
+			margin: 130px auto 0;
+			padding: 0;
+		}
+		@include mq(large) {
+			margin: 128px auto 0;
+		}
+		.bullets {
+			.points {
+				position: relative;
+				font-family: Din-Bold;
+				font-size: 0.9em;
+				padding: 0 0 0 30px;
+				margin: 0 0 50px;
+				.icons {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 16px;
+					height: auto;
+				}
+			}
+			&:last-of-type {
+				@include mq(small) {
+					float: right;
+					width: 120px;
+				}
+			}
+			@include mq(medium) {
+				width: 50%;
+			}
+		}
+	}
+	.phone_wrapper {
+		text-align: center;
+		margin: 52px auto;
+		max-width: 470px;
+		@include mq(large) {
+			margin: 0 auto;
+		}
+		.phone {
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 20px;
+			width: 44%;
+			@include mq(large) {
+				width: auto;
+			}
+		}
+	}
+	.ad_buttons {
+		display: block;
+		vertical-align: middle;
+		font-size: 0.7em;
+		text-transform: uppercase;
+		color: #000;
+		@include mq(small) {
+			font-size: 0.9em;
+		}
+		@include mq(large) {
+			margin: 0px 0 0;
+			padding: 0;
+		}
+		img,
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		img {
+			width: 20px;
+			margin-right: 10px;
+		}
+	}
+	.ad-terms {
+		margin-top: 30px;
+	}
+}

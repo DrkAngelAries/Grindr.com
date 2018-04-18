@@ -1,0 +1,27 @@
+@import 'base';
+.press {
+	h2 {
+		margin-top: 3px;
+		margin-bottom: 2px;
+	}
+	.press_news div:last-of-type hr {
+		display: none;
+	}
+	.press_assets {
+		@include mq(medium) {
+			max-width: 250px;
+		}
+	}
+	.presskit_link {
+		position: relative;
+		display: block;
+		padding: 0 0 0 23px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 14px;
+			height: auto;
+		}
+	}
+}

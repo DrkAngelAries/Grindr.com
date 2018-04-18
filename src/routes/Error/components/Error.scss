@@ -1,0 +1,39 @@
+@import 'base';
+
+
+
+.error {
+	text-align: center;
+	margin: 100px 0 200px;
+	@include mq($from: xs-small, $until: small) {
+		margin: 100px 0 0;
+	}
+	h1 {
+		text-align: center;
+		/* border: 1px solid red; */
+		width: 200px;
+		margin: 0 auto;
+		position: relative;
+		transform: rotate(-17deg);
+		left: -120px;
+		top: 29px;
+		font-size: 4em;
+		@include mq($from: xs-small, $until: small) {
+			text-align: center;
+			width: 200px;
+			margin: 0 auto;
+			position: relative;
+			transform: rotate(-17deg);
+			left: -49px;
+			top: 24px;
+			font-size: 3.4em;
+		}
+	}
+	.sad {
+		width: 150px;
+		height: auto;
+		@include mq($from: xs-small, $until: small) {
+			
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@import './variables/animations';
+@import './variables/colors';
+@import './variables/mixins';
+@import '~sass-mq/mq';
+
+// @import '~bootstrap-sass/assets/stylesheets/bootstrap-sprockets';
+// @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$mq-breakpoints: (
+	xs-small:  320px,
+	small:  768px,
+	medium: 992px,
+	large:    1200px,
+	xl-large:    1441px,
+);

@@ -1,0 +1,100 @@
+@import 'base';
+
+/* Footer */
+
+.footer {
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 20px 20px 60px;
+	font-family: DIN-Regular;
+	color: #B9BABC;
+	overflow: auto;
+	@include mq(small) {
+		padding: 20px 20px 70px;
+	}
+	.downloadlink,
+	.downloadlink:hover {
+		display: inline-block;
+		cursor: pointer;
+		font-family: GarageGothic-Bold;
+		text-transform: uppercase;
+		color: #FDBD2C;
+		margin: 0 auto;
+		font-size: 1.7em;
+		letter-spacing: 1px;
+	}
+	.left_side {
+		text-align: left;
+		margin: 0 0 25px;
+		@include mq(small) {
+			float: left;
+		}
+	}
+	/* Footer Socials */
+	.socials {
+		margin: 11px 0 0 -6px;
+		.social_box {
+			display: inline-block;
+			margin: 0 4px;
+			a {
+				display: block;
+				overflow: hidden;
+				height: 19px;
+				width: 24px;
+				img {
+					display: block;
+					height: 100%;
+					width: auto;
+				}
+			}
+			.fb_social {
+				img {
+					margin: 0 0 0 6px;
+				}
+			}
+		}
+	}
+	/* Footer Nav */
+	.footer_nav {
+		width: 200px;
+		@include mq(small) {
+			float: right;
+		}
+		a {
+			display: block;
+			font-size: 0.8em;
+			color: $black;
+			font-weight: 100;
+			font-family: DIN-Medium;
+		}
+	}
+	/* Copyright */
+	.footer_copyright {
+		padding: 110px 0 0;
+		font-size: 0.8em;
+		letter-spacing: 0.04em;
+		font-family: DIN-Medium;
+		display: block;
+		clear:both;
+		padding-top: 0;
+	}
+	.footer_links {
+		display: inline-block;
+		margin: 5px 0;
+		text-transform: none;
+		text-align: left;
+	}
+	hr {
+		margin-bottom: 10px;
+		border-top: 1px solid #272729;
+	}
+}
+
+
+/* Utility Classes */
+
+.vert_align {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

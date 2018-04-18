@@ -1,0 +1,24 @@
+@import 'base';
+.sweepstakes.container {
+	h1 {
+		text-align: center;
+	}
+	.form_section {
+		padding: 0 40px;
+	}
+	.align_left {
+		float: left;
+		@media screen and (max-width: 600px) {
+			float: none;
+		}
+	}
+	.align_right {
+		float: right;
+		@media screen and (max-width: 600px) {
+			float: none;
+		}
+	}
+	.clearfix {
+		clear: both;
+	}
+}

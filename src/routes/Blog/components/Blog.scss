@@ -1,0 +1,46 @@
+@import 'base';
+
+.blog {
+	.blog_item {
+		margin-bottom: 100px;
+		.hero {
+			margin: 0 0 10px;
+		}
+		.content_area {
+			img {
+				width: 100%;
+			}
+			h2 {
+				font-family: GarageGothic-Black;
+				text-transform: uppercase;
+				margin: 0 0 29px;
+				padding: 0;
+				font-size: 1.9em;
+				letter-spacing: .025em;
+				a {
+					cursor: pointer!important;
+					color: #000 !important;
+					font-size: .875em;
+					text-decoration: none!important;
+				}
+				
+//				a:visited, 
+				a:hover {
+					color: #fec010!important;
+				}
+			}	
+		}
+		h5 {
+			text-align: center;
+		}
+		.social_links {
+			text-align: center;
+			.reblog_link {
+				img {
+					width: 14px;
+					height: auto;	
+				}
+			}	
+		}
+	}
+}
